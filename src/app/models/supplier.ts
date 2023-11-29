@@ -6,8 +6,9 @@ export class Supplier {
   to = [];
   goods = [];
   reviews = [];
+  id: number;
 
-  constructor(name, email, tel, from, to, goods, reviews) {
+  constructor(name, email, tel, from, to, goods, reviews, id) {
     this.name = name;
     this.email = email;
     this.tel = tel;
@@ -15,5 +16,6 @@ export class Supplier {
     this.to = to;
     this.goods = goods;
     this.reviews = reviews;
+    this.id = id;
   }
 }

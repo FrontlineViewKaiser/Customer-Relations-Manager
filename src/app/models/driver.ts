@@ -7,8 +7,9 @@ export class Driver {
   vehicle: string;
   goods = [];
   reviews = [];
+  id: number;
 
-  constructor(name, email, tel, from, to, vehicle, goods, reviews) {
+  constructor(name, email, tel, from, to, vehicle, goods, reviews, id) {
     this.name = name;
     this.email = email;
     this.tel = tel;
@@ -17,5 +18,6 @@ export class Driver {
     this.vehicle = vehicle;
     this.goods = goods;
     this.reviews = reviews;
+    this.id = id
   }
 }
