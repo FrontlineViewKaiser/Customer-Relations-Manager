@@ -17,6 +17,8 @@ import { SettingsComponent } from './settings/settings.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { ContactDialogueComponent } from './contact-dialogue/contact-dialogue.component';
+import { DetailDialogueComponent } from './detail-dialogue/detail-dialogue.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { LoginComponent } from './login/login.component';
     DashboardComponent,
     HomeComponent,
     LoginComponent,
+    ContactDialogueComponent,
+    DetailDialogueComponent,
   ],
   imports: [
     BrowserModule,

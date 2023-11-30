@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import {
   MatDialog,
-  MatDialogActions,
-  MatDialogClose,
-  MatDialogContent,
-  MatDialogTitle,
 } from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
+
+import { ContactDialogueComponent } from '../contact-dialogue/contact-dialogue.component';
+import { DetailDialogueComponent } from '../detail-dialogue/detail-dialogue.component';
 
 @Component({
   selector: 'app-driver',
@@ -14,11 +12,14 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrls: ['./driver.component.scss']
 })
 export class DriverComponent {
+  DetailDialogue = DetailDialogueComponent
+  ContactDialogue = ContactDialogueComponent
   drivers = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 
   constructor(public dialog: MatDialog) {}
 
-  openDialog() {
-    //this.dialog.open();
+  openDialog(component) {
+    this.dialog.open(component);
   }
+
 }
